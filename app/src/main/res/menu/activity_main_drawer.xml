@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_stocks"
+            android:icon="@drawable/ic_menu_line_chart"
+            android:title="Akcje" />
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_menu_star"
+            android:title="Ulubione firmy" />
+        <item
+            android:id="@+id/nav_historical"
+            android:icon="@drawable/ic_menu_history"
+            android:title="Dane historyczne" />
+        <item
+            android:id="@+id/nav_compare"
+            android:icon="@drawable/ic_menu_compare"
+            android:title="Porównać akcje" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Skontaktować się z autorami" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_about"
+                android:title="Autorzy" />
+        </menu>
+    </item>
+
+</menu>

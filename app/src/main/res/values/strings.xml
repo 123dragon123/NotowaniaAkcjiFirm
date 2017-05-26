@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Notowania akcji firm</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_get_stocks_data">GetStocksData</string>
+    <string name="title_activity_compare_stock_data">CompareStockData</string>
+    <string name="porownanie">Porównanie</string>
+    <string name="data">Data</string>
+    <string name="puste">----</string>
+    <string name="otwarcie">Otwarcie</string>
+    <string name="zamkni_cie">Zamknięcie</string>
+    <string name="r_nica">Różnica</string>
+    <string name="znacz_min">Znacz. min.</string>
+    <string name="znacz_maks">Znacz. maks.</string>
+    <string name="wolumie_ob">Wolumień ob.</string>
+    <string name="nazwa_firmy">Nazwa Firmy</string>
+    <string name="firma1">Firma1</string>
+    <string name="firma2">Firma2</string>
+    <string name="dd">DD</string>
+    <string name="mm">MM</string>
+    <string name="rrrr">RRRR</string>
+    <string name="por_wnaj">Porównaj</string>
+    <string name="ulubione_firmy">Ulubione firmy</string>
+    <string name="dodaj">Dodaj</string>
+    <string name="np_aapl">Np:AAPL</string>
+    <string name="pobierz_dane">Pobierz dane</string>
+    <string name="usu_z_ulubionych">Usuń z ulubionych</string>
+    <string name="akcje">Akcje</string>
+    <string name="pobra_dane">Pobrać dane</string>
+    <string name="skr_t_firmy">Skrót firmy</string>
+    <string name="znaczenie_minimalnie">Znaczenie minimalnie</string>
+    <string name="znaczenie_maksymalnie">Znaczenie maksymalnie</string>
+    <string name="wolumie_obrot_w">Wolumień obrotów</string>
+    <string name="title_activity_autorzy">autorzy</string>
+</resources>
