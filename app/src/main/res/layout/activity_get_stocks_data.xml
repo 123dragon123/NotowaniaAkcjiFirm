@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.przybylskik.stachn.notowaniaakcjifirm.GetStocksData">
+
+
+    <TextView
+        android:id="@+id/textViewNazwaFirmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nazwa firmy"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNazwaFirmy"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/textViewNapisOtwarcie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Otwarcie"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisData"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisZamkniecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zamknięcie"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisOtwarcie"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Znaczenie minimalnie"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisRoznicz" />
+
+    <TextView
+        android:id="@+id/textViewNapisMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Znaczenie maksymalnie"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisMin"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisWolumien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wolumień obrotów"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisMax"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisMax"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/textViewOtwarcie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewData"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisMax"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewZamkniecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOtwarcie"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisMax"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisMax"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoznica" />
+
+    <TextView
+        android:id="@+id/textViewMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisMax"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMin" />
+
+    <TextView
+        android:id="@+id/textViewWolumien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisMax"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMax" />
+
+    <TextView
+        android:id="@+id/textViewNapisRoznicz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Różnica"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisZamkniecie"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRoznica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewZamkniecie"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisMax"
+        android:layout_marginLeft="8dp" />
+</android.support.constraint.ConstraintLayout>
