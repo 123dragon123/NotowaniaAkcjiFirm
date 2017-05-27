@@ -5,16 +5,121 @@
     android:layout_height="match_parent"
     tools:context="com.przybylskik.stachn.notowaniaakcjifirm.fragments.HistoricalFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Historical"
+        android:text="Dane historyczne"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"
+        android:id="@+id/textView5" />
+
+    <Button
+        android:id="@+id/buttonPobierzDane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pobierz dane"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDzien"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisDziem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dzien"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintLeft_toRightOf="@+id/editTextNazwaFirmy"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textViewNapisMiesiac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miesiąc"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintLeft_toRightOf="@+id/editTextDzien"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewNapisRok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rok"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisMiesiac"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/editTextDzien"
+        android:layout_width="40sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="DD"
+        android:maxLength="2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisDziem"
+        app:layout_constraintLeft_toRightOf="@+id/editTextNazwaFirmy"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/editTextMiesiac"
+        android:layout_width="40sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="MM"
+        android:maxLength="2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisMiesiac"
+        app:layout_constraintLeft_toRightOf="@+id/editTextDzien"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/editTextRok"
+        android:layout_width="55sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="RRRR"
+        android:maxLength="4"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisRok"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisMiesiac"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:id="@+id/textViewNapisNazwaFirmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nazwa firmy"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNazwaFirmy"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Np: AAPL"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisNazwaFirmy"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
