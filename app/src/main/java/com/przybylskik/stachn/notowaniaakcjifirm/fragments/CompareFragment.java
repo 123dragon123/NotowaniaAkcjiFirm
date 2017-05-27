@@ -1,4 +1,4 @@
-package com.example.przybylskik.stachn.notowaniaakcjifirm.fragments;
+package com.przybylskik.stachn.notowaniaakcjifirm.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.przybylskik.stachn.notowaniaakcjifirm.CompareStockData;
-import com.example.przybylskik.stachn.notowaniaakcjifirm.R;
+import com.przybylskik.stachn.notowaniaakcjifirm.CompareStockData;
+import com.przybylskik.stachn.notowaniaakcjifirm.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

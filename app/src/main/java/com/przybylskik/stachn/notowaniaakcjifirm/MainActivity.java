@@ -17,6 +17,7 @@ import com.przybylskik.stachn.notowaniaakcjifirm.fragments.FavouriteFragment;
 import com.przybylskik.stachn.notowaniaakcjifirm.fragments.HistoricalFragment;
 import com.przybylskik.stachn.notowaniaakcjifirm.fragments.StocksFragment;
 
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
 {
