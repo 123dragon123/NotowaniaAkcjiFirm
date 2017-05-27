@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.przybylskik.stachn.notowaniaakcjifirm.CompareStockData">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Porównanie danych"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisNazwaFirmy"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisOtwarcie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otwarcie"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisData"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisZamkniecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zamkni_cie"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisOtwarcie" />
+
+    <TextView
+        android:id="@+id/textViewNapisRoznica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_nica"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisZamkniecie"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/znacz_min"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisRoznica"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/znacz_maks"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisMin"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisWolumien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wolumie_ob"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisMax"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisNazwaFirmy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nazwa_firmy"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFirma1Nazwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firma1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisWolumien"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewFirma1Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma1Nazwa"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisWolumien"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewFirma1Otwarcie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma1Data"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisWolumien"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewFirma1Zamkniecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma1Otwarcie"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisWolumien"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewFirma1Roznica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma1Zamkniecie"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisWolumien"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewFirma1Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma1Roznica"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisWolumien"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewFirma1Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma1Min"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisWolumien"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewFirma1Wolumien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma1Max"
+        app:layout_constraintLeft_toRightOf="@+id/textViewNapisWolumien"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/textViewFirma2Nazwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/firma2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        android:layout_marginLeft="180dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFirma2Data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma2Nazwa"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewFirma2Nazwa" />
+
+    <TextView
+        android:id="@+id/textViewFirma2Otwarcie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma2Data"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewFirma2Data" />
+
+    <TextView
+        android:id="@+id/textViewFirma2Zamkniecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma2Otwarcie"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewFirma2Otwarcie" />
+
+    <TextView
+        android:id="@+id/textViewFirma2Roznica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma2Zamkniecie"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewFirma2Zamkniecie" />
+
+    <TextView
+        android:id="@+id/textViewFirma2Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma2Roznica"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewFirma2Roznica" />
+
+    <TextView
+        android:id="@+id/textViewFirma2Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma2Min"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewFirma2Min" />
+
+    <TextView
+        android:id="@+id/textViewFirma2Wolumien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirma2Max"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewFirma2Max" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNapisPorownanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/porownanie"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/textViewPorownanieData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNapisPorownanie"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewNapisPorownanie" />
+
+    <TextView
+        android:id="@+id/textViewPorownanieOtwarcie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorownanieData"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewPorownanieData" />
+
+    <TextView
+        android:id="@+id/textViewPorownanieZamkniecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorownanieOtwarcie"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewPorownanieOtwarcie" />
+
+    <TextView
+        android:id="@+id/textViewPorownanieRoznica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorownanieZamkniecie"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewPorownanieZamkniecie" />
+
+    <TextView
+        android:id="@+id/textViewPorownanieMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorownanieRoznica"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewPorownanieRoznica" />
+
+    <TextView
+        android:id="@+id/textViewPorownanieMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorownanieMin"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewPorownanieMin" />
+
+    <TextView
+        android:id="@+id/textViewPorownanieWolumien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/puste"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorownanieMax"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewPorownanieMax" />
+
+</android.support.constraint.ConstraintLayout>

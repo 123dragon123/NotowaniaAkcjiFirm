@@ -3,9 +3,7 @@ package com.przybylskik.stachn.notowaniaakcjifirm;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,9 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-import com.przybylskik.stachn.notowaniaakcjifirm.R;
 import com.przybylskik.stachn.notowaniaakcjifirm.fragments.CompareFragment;
 import com.przybylskik.stachn.notowaniaakcjifirm.fragments.FavouriteFragment;
 import com.przybylskik.stachn.notowaniaakcjifirm.fragments.HistoricalFragment;
@@ -123,12 +119,20 @@ public class MainActivity extends AppCompatActivity
         else
         if (id == R.id.nav_contact)
         {
-
+            //Contact activity
+            //Toast.makeText(MainActivity.this, "Tu będzie napisanie email", Toast.LENGTH_SHORT).show();
+            Intent mailto = new Intent(Intent.ACTION_SEND);
+            mailto.setType("*/*");
+            mailto.putExtra(Intent.EXTRA_EMAIL, "email@email.com");
+            mailto.putExtra(Intent.EXTRA_SUBJECT, "Mail z aplikacji mobilnej");
+            mailto.putExtra(Intent.EXTRA_TEXT, "Zgłaszam następujące uwagi...");
+            startActivity(mailto);
         }
         else
         if (id == R.id.nav_about)
         {
-
+            Intent intent = new Intent(MainActivity.this, autorzy.class);
+            startActivity(intent);
         }
         ftrans.commit();//Zapisywanie zmian i aktualizacja aktywnoĹ›ci
 
