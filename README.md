@@ -32,6 +32,8 @@ Dokumentacja API - [Quandl docs]
 
 Firma Quandl(strona w wikipedii) - [Quandl/Wikipedia]
 
+CSV opis(strona w Wikipedii) - [CSV/Wikipedia]
+
 
 [NotowaniaAkcjiFirm.apk]: <https://github.com/123dragon123/NotowaniaAkcjiFirm/releases/download/1.0/NotowaniaAkcjiFirm.apk>
 [Quandl.com]: <https://www.quandl.com>
